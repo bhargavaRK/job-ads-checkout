@@ -1,0 +1,12 @@
+{
+  "name": "job-ads-checkout",
+  "version": "1.0.0",
+  "description": "job ads checkout code challenge",
+  "main": "index.ts",
+  "repository": "https://github.com/bhargavaRK/job-ads-checkout.git",
+  "author": "bhargavaRK <kbhargava.it@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
