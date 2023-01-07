@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { Checkout } from '../services/checkOutService'
+import { CheckoutService } from '../services/checkOutService'
 import pricingRules from '../config/pricingRules.json'
 import log from '../logger'
 
@@ -15,36 +15,10 @@ export const chekoutController = async (req: Request, res: Response) => {
 
     const eligibleRules = pricingRules.rules.filter((rule) => rule.customerId === customerId)
 
-    const checkout = new Checkout(eligibleRules)
+    const checkout = new CheckoutService(eligibleRules)
 
     const checkoutItems = value.items as string[]
     checkoutItems.forEach((item) => checkout.add({ productId: item }))
-
-    //Customer: default
-    //checkout.add({ productId: 'classic' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'premium' })
-
-    //Customer: SecondBite
-    //checkout.add({ productId: 'classic' })
-    //checkout.add({ productId: 'classic' })
-    //checkout.add({ productId: 'classic' })
-    //checkout.add({ productId: 'premium' })
-
-    //Customer: Axil Coffee Roasters
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'premium' })
-
-    //Customer: Myer
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'standout' })
-    //checkout.add({ productId: 'premium' })
-    //checkout.add({ productId: 'premium' })
 
     console.log(checkout.total())
     res.status(200).send({ total: checkout.total() })

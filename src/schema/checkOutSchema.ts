@@ -1,5 +1,5 @@
 import Joi from 'joi'
-import { PRODUCTTYPES } from '../config/constantans'
+import { PRODUCTTYPES } from '../config/constants'
 
 export const checkOutRequestSchema = Joi.object({
   customerId: Joi.string().required(),
