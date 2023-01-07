@@ -1,0 +1,47 @@
+{
+  "rules": [
+    {
+      "customerId": "myer",
+      "products": ["standout"],
+      "ruleType": "bulkbuy",
+      "ruleConfig": {
+        "eligibleQuantity": 5,
+        "discountedQuantity": 4
+      }
+    },
+    {
+      "customerId": "myer",
+      "products": ["premium"],
+      "ruleType": "bulkbuy",
+      "ruleConfig": {
+        "eligibleQuantity": 2,
+        "discountedQuantity": 1
+      }
+    },
+    {
+      "customerId": "myer",
+      "products": ["premium"],
+      "ruleType": "discountedPrice",
+      "ruleConfig": {
+        "discountedPrice": 389.99
+      }
+    },
+    {
+      "customerId": "axil-coffee-roasters",
+      "products": ["standout"],
+      "ruleType": "discountedPrice",
+      "ruleConfig": {
+        "discountedPrice": 299.99
+      }
+    },
+    {
+      "customerId": "second-bite",
+      "products": ["classic"],
+      "ruleType": "bulkbuy",
+      "ruleConfig": {
+        "eligibleQuantity": 3,
+        "discountedQuantity": 2
+      }
+    }
+  ]
+}

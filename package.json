@@ -2,11 +2,33 @@
   "name": "job-ads-checkout",
   "version": "1.0.0",
   "description": "job ads checkout code challenge",
-  "main": "index.ts",
+  "main": "build/app.js",
   "repository": "https://github.com/bhargavaRK/job-ads-checkout.git",
   "author": "bhargavaRK <kbhargava.it@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "rimraf ./build && tsc && prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && node build/app.js",
+    "start:dev": "rimraf ./build && tsc && node build/app.js",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint ./src --ext .ts",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "pino": "^8.8.0"
+  },
   "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/joi": "^17.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.9.4"
   }
 }

@@ -1,0 +1,65 @@
+Product(s)
+Customer(s)
+PriceRule(s)
+    Type: Discounted Price - fixed discount
+    Type: BulkBuy
+
+Price Rules:
+
+{
+    rules:[
+        {
+            customerId:'myer',
+            products:['​stand-out-ads'],
+            ruleType:'bulkbuy',
+            ruleConfig:{
+                eligibleQuantity:5,
+                discountedQuantity:4
+            }
+        },
+        {
+            customerId:'myer',
+            products: ['​stand-out-ads'],
+            ruleType:'fixedPricedDiscount',
+            ruleConfig:{
+                discountedPrice:389.99            
+            }
+        },
+        {
+            customerId:'axil-coffee-roasters',
+            products: ['​stand-out-ads'],
+            ruleType:'fixedPricedDiscount',
+            ruleConfig:{
+                discountedPrice:299.99            
+            }
+        },
+        {
+            customerId:'second-bite',
+            products: ['​classic-ads'],
+            ruleType:'bulkbuy',
+            ruleConfig:{
+                eligibleQuantity:3,
+                discountedQuantity:2
+            }
+        }
+    ]
+}
+
+
+//look config for a customer, if none no rules to apply, just add product prices
+//if customer has price rules
+    1. get all rules for the customer and products
+    2. 
+    If no rules calculate total based on prices
+    else
+        a. segregate line items by product type (this will have qty)
+        b. for each product, if discount type is 'fixed price' get price from config and calculate
+        c. If discount type if bulky, check conditions, and calculate new qty and calculate line total
+        d. add all line totals.
+
+     
+
+
+
+
+

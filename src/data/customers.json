@@ -1,0 +1,16 @@
+{
+  "customers": [
+    {
+      "id": "second-bite",
+      "name": "SecondBite"
+    },
+    {
+      "id": "axil-coffee-roasters",
+      "name": "Axil Coffee Roasters"
+    },
+    {
+      "id": "second-bite",
+      "name": "MYER"
+    }
+  ]
+}
