@@ -1,121 +1,105 @@
 {
-	"info": {
-		"_postman_id": "e590448c-b757-4b36-b14a-b7afe3e5a591",
-		"name": "jobads-checkout-postman-collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Req-Default-customer",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"customerId\": \"default\",\n    \"items\": [\n        \"premium\",\n        \"classic\",\n        \"standout\"\n    ]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/checkout",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"checkout"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Req-SecondBite-customer",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"customerId\": \"axil-coffee-roasters\",\n    \"items\": [\n        \"premium\",\n        \"standout\",\n        \"standout\",\n        \"standout\"\n    ]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/checkout",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"checkout"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Req-Axil Coffee Roasters-customer",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"customerId\": \"myer\",\n    \"items\": [\n        \"premium\",\n        \"classic\",\n        \"classic\",\n        \"classic\"\n    ]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/checkout",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"checkout"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Req-Myer-customer",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"customerId\": \"myer\",\n    \"items\": [\n        \"premium\",\n        \"standout\",\n        \"standout\",\n        \"standout\",\n        \"standout\",\n        \"standout\"\n    ]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/checkout",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"checkout"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "e590448c-b757-4b36-b14a-b7afe3e5a591",
+    "name": "jobads-checkout-postman-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Req-Default-customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerId\": \"default\",\n    \"items\": [\n        \"premium\",\n        \"classic\",\n        \"standout\"\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/checkout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["checkout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Req-SecondBite-customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerId\": \"second-bite\",\n    \"items\": [\n        \"premium\",\n        \"classic\",\n        \"classic\",\n        \"classic\"\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/checkout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["checkout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Req-Axil Coffee Roasters-customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerId\": \"axil-coffee-roasters\",\n    \"items\": [\n        \"premium\",\n        \"standout\",\n        \"standout\",\n        \"standout\"\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/checkout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["checkout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Req-Myer-customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerId\": \"myer\",\n    \"items\": [\n        \"premium\",\n        \"standout\",\n        \"standout\",\n        \"standout\",\n        \"standout\",\n        \"standout\"\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/checkout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["checkout"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
