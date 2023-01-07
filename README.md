@@ -1,10 +1,17 @@
 # job-ads-checkout
 
-## Pre Requisites
+- This project implements business logic for checkout total price calculations based on configurable pricing rules.
+- It also creates a REST API (ex path: http://localhost:3000/checkout) to test checkout total prices with different pricing rule configurations
+- A postman collection `jobads.checkout.postman_collection.json` included in the project. It has different request for different scenarios
+- Product, customer, price test data is stored in `data` folder for simplicity
 
-- Node JS 18.x
+## Tech Stack
+
+- Node 18.x
 - TypeScript
+- Jest
 - yarn
+- express js
 - vscode IDE recommended with prettier, eslint extensions
 
 ## Install & Run
@@ -14,7 +21,7 @@
 
 ## Usage
 
-1.  Import `postman-collection.json` in postman
+1.  Import `jobads.checkout.postman_collection.json` in postman
 2.  Run different request to see the out put
 
 ## PricingRules Configurations
